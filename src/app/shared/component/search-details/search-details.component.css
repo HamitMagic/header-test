@@ -1,0 +1,27 @@
+.search-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    width: 80%;
+    color: gray;
+}
+.fieldset {
+    width: 100%;
+}
+.author-input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.black {
+    color: black;
+}
+@media (width >= 415px) {
+    .fieldset {
+        width: 69%;
+    }
+    .checkbox {
+        display: flex;
+    }
+}

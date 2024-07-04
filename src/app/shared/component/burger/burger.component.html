@@ -1,0 +1,11 @@
+<div class="burger">
+    <mat-icon aria-hidden="false" fontIcon="menu" [matMenuTriggerFor]="menu"></mat-icon>
+    <mat-menu #menu="matMenu">
+        @for (item of menuList; track item) {
+            <div>
+                <mat-icon [fontIcon]="item.img"></mat-icon>
+                {{item.title}}
+            </div>
+        }
+    </mat-menu>
+</div>
